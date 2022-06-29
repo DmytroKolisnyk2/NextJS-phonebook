@@ -9,7 +9,6 @@ async function writeContacts(contacts) {
 }
 
 async function getAllContacts() {
-  console.log(contactsPath)
   const contacts = JSON.parse(await fs.readFile(contactsPath));
   return contacts;
 }
