@@ -1,0 +1,65 @@
+@import "./variables.scss";
+
+
+
+.phonebook__wrapper {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+.formWrapper {
+  width: 100%;
+  max-width: 300px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  @media screen and (max-width: 768px) {
+    max-width: 400px;
+    margin-right: 0;
+  }
+}
+.listWrapper {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  // flex-wrap: wrap;
+  max-height: 100vh;
+  flex-direction: column;
+}
+.headline {
+  text-transform: uppercase;
+  color: $blue;
+}
+.error {
+  color: $error;
+  text-align: center;
+  font-size: 28px;
+}
+.headlineWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  margin-top: 28px;
+  & h2 {
+    margin: 0;
+  }
+}
+.counterWrapper {
+  color: $blue;
+  font-weight: 600;
+  font-size: 20px;
+  & span {
+    color: $black;
+  }
+  &--overflowed {
+    color: $error;
+    & span {
+      color: $error;
+    }
+  }
+}

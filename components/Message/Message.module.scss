@@ -1,0 +1,13 @@
+@import "styles/variables.scss";
+
+.message__headline {
+  color: $blue;
+  font-size: 22px;
+  margin: 0;
+}
+.message__headlineWrapper {
+  margin: 20px 0 -5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

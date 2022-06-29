@@ -1,0 +1,19 @@
+body {
+  background-color: whitesmoke;
+}
+
+.counter-wrapper {
+  color: #4778ff;
+  font-weight: 600;
+  font-size: 20px;
+  & span {
+    color: #333;
+  }
+  &--overflowed {
+    color: tomato;
+
+    & span {
+      color: tomato;
+    }
+  }
+}
