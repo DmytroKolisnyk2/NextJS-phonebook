@@ -2,7 +2,7 @@ import axios from "axios";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { NotificationManager } from "react-notifications";
 
-axios.defaults.baseURL = "https://61fb905c87801d0017a2c5b6.mockapi.io";
+axios.defaults.baseURL = "https://next-js-phonebook.vercel.app/api";
 
 export const getContact = createAsyncThunk("contacts/getContact", (_, { rejectWithValue }) =>
   axios
