@@ -2,7 +2,7 @@ const fs = require('fs').promises;
 const path = require('path');
 const { v4 } = require('uuid');
 
-const contactsPath = './public/contacts.json';
+const contactsPath = path.resolve('./public/contacts.json');
 
 async function writeContacts(contacts) {
   await fs.writeFile(contactsPath, JSON.stringify(contacts));
